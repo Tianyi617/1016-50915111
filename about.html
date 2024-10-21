@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>關於我 - 我的作品集</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+        }
+
+        section {
+            flex-grow: 1; /* 允許 section 佔據剩餘空間 */
+        }
+
+        footer {
+            margin-top: auto; /* 自動將頁尾推到底部 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #343a40;">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">我的作品集</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="切換導航">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html#portfolio">作品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="about.html">關於我</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">聯繫我</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">關於我</h2>
+        <img src="data:image/png;base64,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" alt="我的照片" class="img-fluid rounded-circle mx-auto d-block" style="max-width: 150px;">
+        <p class="text-center">您好！我是劉羿群，就讀國立虎尾科技大學的學生。</p>
+        <p>我對網頁城市特別感興趣，並且熱衷於網頁開發。在過去的幾年中，我參與了許多項目，並在其中獲得了寶貴的經驗。</p>
+        
+        <h3 class="mt-4">技能與專長</h3>
+        <ul>
+            <li>程式設計：HTML、CSS、JavaScript</li>
+            <li>網頁開發：React、Node.js</li>
+            <li>數據分析：Python、R</li>
+            <li>語言能力：英文、中文</li>
+        </ul>
+        
+        <h3 class="mt-4">我的經歷</h3>
+        <p>在 [公司或學校名稱] 的 [工作或實習職位] 中，我負責 [描述你的職責和成就]。這段經歷讓我對 [相關領域] 有了更深入的了解。</p>
+        
+        <h3 class="mt-4">未來目標</h3>
+        <p>我希望在未來能夠成為一名專業的網頁開發工程師，專注於創建高效和可持續的網站解決方案。</p>
+        
+        <h3 class="mt-4">下載我的簡歷</h3>
+        <p><a href="example.txt" class="btn btn-outline-primary" target="_blank">下載簡歷</a></p>
+        
+        <h3 class="mt-4">聯繫我</h3>
+        <p>如果您對我的作品或背景感興趣，請隨時聯繫我！</p>
+    </section>
+
+    <footer class="text-center py-4" style="background-color: #343a40; color: white;">
+        <p>© 2024 我的作品集. 保留所有權利.</p>
+        <div>
+            <a href="https://facebook.com" class="me-3 text-decoration-none text-white" target="_blank">
+                <i class="fab fa-facebook fa-lg"></i>
+            </a>
+            <a href="https://line.me" class="me-3 text-decoration-none text-white" target="_blank">
+                <i class="fab fa-line fa-lg"></i>
+            </a>
+            <a href="https://instagram.com" class="text-decoration-none text-white" target="_blank">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
